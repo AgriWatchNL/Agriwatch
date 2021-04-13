@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+<style>
+
+</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AgriWatch B.V Portal</title>
+    <!-- styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans|Baumans' type='text/css'>
+  <link rel="stylesheet" href="styles/reset.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="styles/viewer.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="https://gisedu.itc.utwente.nl/exercise/libraries/openlayers/v4.6.4/ol.css" 
+    type="text/css"/>
+	
+	<!-- scripts -->
+	<script src="https://gisedu.itc.utwente.nl/exercise/libraries/openlayers/v4.6.4/ol.js"></script>  
+	<script src="scripts/viewer1.js"></script>
+	<script src="https://gisedu.itc.utwente.nl/exercise/libraries/d3js/v4.13.0/d3.min.js"></script>
+	<script src="https://gisedu.itc.utwente.nl/exercise/libraries/d3js/d3-tip_v4/d3-tip.js"></script>
+</head>
+
+
+
+
+  <div class="container header">
+    <header>
+      <h1>AgriWatch Web Portal</h1>
+
+      <nav>
+        <ul>
+          <li><a href="Contact.html">User login</a></li>
+          <li class="active"><a href="data-viewer3.html">Data Viewer</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  
+  
+ 
+ 
+  <!-- Map Section -->
+  <body> 
+ 
+  
+<div class="embed-container">
+  <!--<a href "//agriwatch.maps.arcgis.com/apps/Embed/index.html?webmap=07d17c8fa6de460b8db760546c58a5aa&extent=5.0853,51.9788,9.4469,53.06&home=true&zoom=true&scale=true&legend=true&basemap_gallery=true&disable_scroll=true&theme=light" style="color:#0000FF;text-align:left" target="_blank"></a><br>-->
+  
+  <iframe width="400" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="agriwatch_map" 
+  src="https://agriwatch.maps.arcgis.com/apps/webappviewer/index.html?id=631310308c044163b0fa71240384440d"></iframe></div>
+  
+  <style>.embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container iframe{position: absolute; top: 0; left: 0; width: 100%; height: 100%;} small{position: absolute; z-index: 40; bottom: 0; margin-bottom: -15px;}</style>
+  
+  
+
+  </style>
+  <section id="uploadfile">
+ <form action="upload.php" method="POST">
+  <input type="file" multiple>
+  <p>Drag your files here or click in this area.</p>
+  <button type="submit">Upload</button>
+  </header>
+</form>
+ </section> 
+
+<style>
+form{
+  position: absolute;
+  top: 21%;
+  left: 45%;
+  margin-top: -15px;
+  margin-left: -340px;
+  width: 770px;
+  height: 50px;
+  border: 4px dashed color:#47d147;
+}
+form p{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  color: #47d147;
+  font-family: Arial;
+}
+form input{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  height: 50%;
+  outline: none;
+  opacity: 0;
+}
+form button{
+  margin: 0;
+  color: #47d147;
+  background: #47d147
+  border: none;
+  width: 779px;
+  height: 35px;
+  margin-top: -20px;
+  margin-left: -4px;
+  border-radius: 4px;
+  border-bottom: 4px solid #56BF37;
+  transition: all .2s ease;
+  outline: none;
+}
+form button:hover{
+  background: #9EDF45;
+	color: #0CBE4F;
+}
+form button:active{
+  border:0;
+}
+</style>
+
+
+ <!--<section id="spacer">
+   
+    <p>Visualizations created using OpenLayers, MapServer & D3</p>
+  </section> -->
+  
+	<footer>
+	 <style>
+	 </style>
+    <!-- Copyright notice -->
+    <!--<section id="copyright">
+      <div class="wrapper">
+        <div class="social">
+          <a href="javascript:void(0)"><img src="images/icon-link-1.png" alt="tumblr" width="25"/></a>
+          <a href="javascript:void(0)"><img src="images/icon-link-2.png" alt="youtube" width="25"/></a>
+          <a href="javascript:void(0)"><img src="images/icon-link-3.png" alt="google plus" width="25"/></a>
+		</div>
+        &copy; Copyright 2019 by
+        <a href="https://www.itc.nl/geoinformatics">MGEO - Geoinformatics Program</a>.
+        All Rights Reserved.
+      </div>
+    </section> <!-- copyright -->
+    
+    <!-- Footer content -->
+    <section class="wrapper">
+      <article class="column">
+	  <a href="dimitri.marjan90@gmail.com"> <i class="glyphicon glyphicon-envelope" style="font-size: 2em; color:#47d147;" ></i></a>
+		
+        <h4></h4>
+		<p></p>
+        </article>
+      
+      <article class="column midlist">
+        <h4></h4>
+	
+		<a href="dimitri.marjan90@gmail.com"> <i class="fa fa-phone"  style="font-size: 2em; color:#47d147;"></i></a>
+		
+		
+      </article>
+   
+      <article class="column rightlist">
+	     
+		<i class="fa fa-map-marker" aria-hidden="true"  style="font-size: 2.4em; color:#47d147;" ></i></a>
+		
+	     
+        <!--<h4>Our services</h4>
+        <ul>
+          <li><a href="https://www.itc.nl">
+            <img src="images/itc-link.png" width="80" alt="some alt text"/>
+            <span>ITC Faculty, University of Twente</span>
+          </a></li>
+          <li><a href="https://www.itc.nl/EOS">
+            <img src="images/eos-link.png" width="80" alt="some alt text"/>
+            <span>Earth Observation Science (EOS) Department</span>
+          </a></li>
+          <li><a href="https://gip.itc.nl">
+            <img src="images/gip-link.png" width="80" alt="some alt text"/>
+            <span>Geo-information Processing (GIP) Department</span>
+          </a></li>
+        </ul>
+      </article>-->
+    </section>
+	
+  </footer>  
+</body>
+ 
+</html>
